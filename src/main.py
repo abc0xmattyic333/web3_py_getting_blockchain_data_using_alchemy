@@ -427,7 +427,37 @@ ALCHEMY_API_KEY = "dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
 # URL = f"https://geist-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
 
 # Connect to Arbitrum
-URL = f"https://arb-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+# URL = f"https://arb-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Starknet
+# URL = f"https://starknet-mainnet.g.alchemy.com/starknet/version/rpc/v0_7/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Arbitrum Nova
+# URL = f"https://arbnova-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Astar
+# URL = f"https://astar-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"  
+
+# Connect to Polygon zkEVM network
+# URL = f"https://polygonzkevm-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to ZetaChain
+# URL = f"https://zetachain-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m" 
+
+# Connect to Fantom Opera
+# URL = f"https://fantom-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m" 
+
+# Connect to Mantle
+# URL = f"https://mantle-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Berachain
+# URL = f"https://berachain-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m" 
+
+# Connect to Blast
+# URL = f"https://blast-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m" 
+
+# Connect to Linea
+URL = f"https://linea-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
 
 # 📦 Define the payload for the JSON-RPC request
 payload = {
@@ -488,3 +518,39 @@ for t in transfers:
 ########### Satage changes and commit them! ###############
 ########### Push to your remote repository! ###############
 ########### You are doing great! :) ####################
+
+# Welcome back! 
+
+# Connect to Starknet
+# Unsuccessful
+
+# Connect to Arbitrum Nova
+# Successful
+
+# Connect to Astar
+# Unsuccessful
+
+# Connect to Polygon zkEVM network
+# Unsuccessful
+
+# Connect to ZetaChain
+# Successful
+
+# Connnect to Fantom Opera
+# Unsuccessful
+
+# Connect to Mantle
+# Unsuccessful
+
+# Connect to Berachain
+# Successful
+
+# Connect to Blast
+# Successful
+
+# Connect to Linea
+# Successful
+
+# Save your work! :)
+############################################################################
+############################################################################  
