@@ -185,14 +185,14 @@ from web3 import Web3
 # w3 = Web3(Web3.HTTPProvider('https://gensyn-testnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m'))
 
 # Connect to Tea
-w3 = Web3(Web3.HTTPProvider('https://tea-sepolia.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m'))
+# w3 = Web3(Web3.HTTPProvider('https://tea-sepolia.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m'))
 
 # Get block by number
-block_number = 'latest'  # Replace with the desired block number or use 'latest'
-block = w3.eth.get_block(block_number) # Get the latest block
+# block_number = 'latest'  # Replace with the desired block number or use 'latest'
+# block = w3.eth.get_block(block_number) # Get the latest block
 
 # Print the block information
-print(block)
+# print(block)
 
 # The above code will print the latest block information, including the block number, hash, timestamp, and other details.
 # Run the script using the following command:
@@ -387,3 +387,104 @@ print(block)
 # Some of them returned odd responses but we were able to connect to them.
 
 # We will dive further into the Web3.py library in the next tutorial.
+
+###################################################################################
+####################################################################################
+####################################################################################
+
+# Hey, welcome back to the tutorial on how to use the Web3.py library to interact with the Ethereum blockchain and other EVM-compatible blockchains.
+# In today's tutorial, we will be using the Alchemy API to get asset transfers from the Ethereum blockchain and other EVM-compatible blockchains.``
+
+# Import the requests library to make HTTP requests
+# The requests library is a simple and easy-to-use library for making HTTP requests in Python.
+# It allows you to send HTTP requests and handle responses in a simple and intuitive way.
+# It is a popular library for making API requests in Python and is widely used in the Python community.
+import requests
+import json
+
+# 🔑 Replace with your own Alchemy API Key
+ALCHEMY_API_KEY = "dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Ethereum 
+# URL = f"https://eth-mainnet.g.alchemy.com/v2/{ALCHEMY_API_KEY}" 
+
+# Connect to WorldChain
+# URL = f"https://worldchain-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Shape
+# URL = f"https://shape-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m" #
+
+# Connect to ZKsync
+# URL = f"https://zksync-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to OP 
+# URL = f"https://opt-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Polygon PoS
+# URL = f"https://polygon-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Geist
+# URL = f"https://geist-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Arbitrum
+URL = f"https://arb-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# 📦 Define the payload for the JSON-RPC request
+payload = {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "alchemy_getAssetTransfers",
+    "params": [
+        {
+            "fromBlock": "0x0",                   # From genesis block
+            "toBlock": "latest",
+            "category": ["external", "erc20", "erc721", "erc1155"],
+            "withMetadata": True,
+            "excludeZeroValue": True,
+            "maxCount": "0x64",                  # 100 in hex
+        }
+    ]
+}
+
+# 🔁 Send the POST request
+response = requests.post(URL, json=payload)
+result = response.json()
+
+# 🖨️ Print some transfers
+transfers = result.get("result", {}).get("transfers", [])
+
+print(f"Found {len(transfers)} transfers:\n")
+for t in transfers:
+    print(f"{t['asset']} from {t['from']} → {t['to']} | Tx: {t['hash']}")
+
+# The above code will print the asset transfers from the Ethereum blockchain.
+# Nicely done! :)
+
+# Now we will go through and try connecting to the other corresponding networks on Alchemy's platform.
+
+# Check reponse for WorldChain
+# Successful
+
+# Connect to Shape
+# Successful
+
+# Connect to ZKsync
+# Successful
+
+# Connect to Optimism 
+# Successful
+
+# Connect to Polygon PoS
+# Successful
+
+# Connect to Geist
+# Unsuccessful
+
+# Connect to Arbitrum
+# Successful
+
+########### Grab some more coffee! :) ################
+########### Save what you have done so far! ###########
+########### Satage changes and commit them! ###############
+########### Push to your remote repository! ###############
+########### You are doing great! :) ####################
