@@ -457,7 +457,10 @@ ALCHEMY_API_KEY = "dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
 # URL = f"https://blast-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m" 
 
 # Connect to Linea
-URL = f"https://linea-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+# URL = f"https://linea-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Zora
+URL = f"https://zora-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
 
 # 📦 Define the payload for the JSON-RPC request
 payload = {
@@ -554,3 +557,10 @@ for t in transfers:
 # Save your work! :)
 ############################################################################
 ############################################################################  
+############################################################################
+
+
+# So you can see that we have been able to connect to most of the networks on Alchemy's platform.
+# Some of them returned odd responses but we were able to connect to them.
+  
+# Connect to Zora
