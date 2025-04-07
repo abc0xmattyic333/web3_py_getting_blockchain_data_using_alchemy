@@ -460,7 +460,19 @@ ALCHEMY_API_KEY = "dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
 # URL = f"https://linea-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
 
 # Connect to Zora
-URL = f"https://zora-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+# URL = f"https://zora-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Polynomial
+# URL = f"https://polynomial-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Base
+# URL = f"https://base-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Scroll
+# URL = f"https://scroll-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
+
+# Connect to Gnosis
+URL = f"https://gnosis-mainnet.g.alchemy.com/v2/dWyoVQk_WuDlDxaYSGZmbU_ECahte9_m"
 
 # 📦 Define the payload for the JSON-RPC request
 payload = {
@@ -564,3 +576,15 @@ for t in transfers:
 # Some of them returned odd responses but we were able to connect to them.
   
 # Connect to Zora
+# Successful
+
+# Connect to Polynomial
+# Unsuccessful
+
+# Connect to Base
+# Successful
+
+# Connect to Scroll
+# Successful
+
+# Connect to Gnosis
